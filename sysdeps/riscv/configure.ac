@@ -16,3 +16,7 @@ EOF
   fi
   rm -rf conftest.*])
 LIBC_CONFIG_VAR([riscv-r-align], [$libc_cv_riscv_r_align])
+
+if test x"$build_mathvec" = xnotset; then
+  build_mathvec=yes
+fi
